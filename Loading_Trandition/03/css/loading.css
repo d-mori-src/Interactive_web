@@ -1,0 +1,36 @@
+#splash {
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+#splash #splashText {
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+#splash .loaderCover {
+    width: 100%;
+    height: 50%;
+    background: rgb(174, 99, 219);
+    background: linear-gradient(90deg, #ae63db 0%, #61d0ff 100%);
+    transition: all 0.2s cubic-bezier(0.04, 0.435, 0.315, 0.9);
+    transform: scaleY(1);
+}
+#splash .loaderCoverUp {
+    transform-origin: center top;
+}
+#splash .loaderCoverDown {
+    position: absolute;
+    bottom: 0;
+    transform-origin: center bottom;
+}
+#splash .coveranime {
+    transform: scaleY(0);
+}
