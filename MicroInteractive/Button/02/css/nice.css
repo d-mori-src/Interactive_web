@@ -1,0 +1,48 @@
+.LikesIcon .LikesIcon-fa-heart {
+    font-size: 30px;
+}
+.LikesIcon .LikesIcon-fa-heart.heart {
+    -webkit-animation: heartAnimation 0.2s;
+            animation: heartAnimation 0.2s;
+    color: #e2264d;
+}
+@-webkit-keyframes heartAnimation {
+    0% {
+        transform: scale(0.5);
+    }
+    10% {
+        transform: scale(0.7);
+    }
+    30% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes heartAnimation {
+    0% {
+        transform: scale(0.5);
+    }
+    10% {
+        transform: scale(0.7);
+    }
+    30% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

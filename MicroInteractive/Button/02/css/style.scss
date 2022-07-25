@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// font-family: 'Noto Sans JP', sans-serif;
+// font-family: 'EB Garamond', serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    color: #333;
+    background: #fff;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+main { // 便宜上のスタイル
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
