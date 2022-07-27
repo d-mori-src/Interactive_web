@@ -1,0 +1,56 @@
+.navi {
+    width: calc(100% - 40px);
+    background: rgba(255,255,255,0.95);
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+    padding: 20px;
+    border-radius: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    transition: .5s;
+    z-index: 999;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            margin: 0 12px;
+            p {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .fab {
+                font-size: 32px;
+            }
+            .fa-facebook-f {
+                color:#3B5998;
+            }
+            .fa-twitter {
+                color: #1DA1F2;
+            }
+            .fa-instagram {
+                color: #000;
+            }
+            .fa-line {
+                color: #06c755;
+            }
+        }
+    }
+    @media screen and (min-width:768px) {
+        width: 480px;
+        right: 40px;
+        bottom: 40px;
+        left: auto;
+    }
+    @media screen and (min-width:1024px) {
+        width: 560px;
+        padding: 24px 40px;
+        border-radius: 60px;
+        right: 64px;
+        bottom: 64px;
+    }
+}
+.navi.hide {
+    transform: translateY(300%);
+}
