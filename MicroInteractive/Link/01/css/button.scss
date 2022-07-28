@@ -1,0 +1,39 @@
+.container { // 便宜上のスタイル
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.underline {
+	position: relative;
+	font-size: var(--font-size);
+	font-family: var(--font-family), var(--font-type);
+	color: var(--color);
+	padding: 0 0 4px 0;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 20px;
+		border-bottom: 2px solid var(--color);
+	}
+	&:hover::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		border-bottom: 2px solid var(--color);
+		animation: border_anim 0.2s linear forwards;
+	}
+}
+
+@keyframes border_anim {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
