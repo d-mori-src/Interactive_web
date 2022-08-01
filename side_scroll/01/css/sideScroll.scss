@@ -1,0 +1,38 @@
+// 共通
+.page {
+    height: 100vh;
+    position: relative;
+    // p {
+    //     mix-blend-mode: difference;
+    // }
+}
+
+.bg1 { background: #fff; }
+.bg2 { background: #ccc; }
+
+// 〜1023px
+.spTabArea {
+    display: block;
+    .spPage {
+        padding: 56px 0 0 0;
+    }
+    @media screen and (min-width:1023px) {
+        display: none;
+    }
+}
+
+// 1024px~
+.sideArea {
+    display: none;
+    @media screen and (min-width:1024px) {
+        display: block;
+        overflow: hidden;
+        .sideWrap {
+            display: flex;
+            padding: 0 0 0 72px;
+            // .sideItem {
+
+            // }
+        }
+    }
+}

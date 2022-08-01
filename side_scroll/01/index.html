@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+  <head>
+  <meta charset="utf-8">
+  <title>横スクロール雛形</title>
+  <meta name="description" content="This is description.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta name="theme-color" content="#fafafa">
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="apple-touch-icon" href="./meta/icon.png">
+  <link rel="shortcut icon" href="./meta/favicon.ico">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/slidein.css">
+  <link rel="stylesheet" href="./css/sideScroll.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/drawer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+  <body>
+    <div class="container">
+      <label for="openSidebarMenu">
+        <header class="header">
+          <div class="innerHeader">
+            <h1>sample logo</h1>
+            <ul>
+              <li class="vertical">目次<span>Menu</span></li>
+              <li>
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <div class="sidebarIconToggle">
+                  <div class="spinner diagonal part-1"></div>
+                  <div class="spinner diagonal part-2"></div>
+                </div>
+                <div id="sidebarMenu">
+                  <ul class="sidebarMenuInner">
+                    <li><a href="">詳細A</a></li>
+                    <li><a href="">詳細B</a></li>
+                    <li><a href="">詳細C</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="scrollIcon">
+            scroll
+          </div>
+        </header>
+      </label>
+
+      <main>
+        <!-- 〜1023px -->
+        <section class="spTabArea">
+          <div class="page spPage bg1">sp1</div>
+          <div class="page spPage bg2">sp2</div>
+        </section>
+       
+        <!-- 1024px〜 -->
+        <section class="sideArea">
+          <div class="sideWrap">
+            <div class="page bg1 sideItem">pc1</div>
+            <div class="page bg2 sideItem">pc2</div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/umd/gsap.js"></script>
+    <script src="./js/umd/ScrollTrigger.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

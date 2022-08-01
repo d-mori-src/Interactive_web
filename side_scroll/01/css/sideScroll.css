@@ -1,0 +1,38 @@
+.page {
+    height: 100vh;
+    position: relative;
+}
+
+.bg1 {
+    background: #fff;
+}
+
+.bg2 {
+    background: #ccc;
+}
+
+.spTabArea {
+    display: block;
+}
+.spTabArea .spPage {
+    padding: 56px 0 0 0;
+}
+@media screen and (min-width: 1023px) {
+    .spTabArea {
+        display: none;
+    }
+}
+
+.sideArea {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .sideArea {
+        display: block;
+        overflow: hidden;
+    }
+    .sideArea .sideWrap {
+        display: flex;
+        padding: 0 0 0 72px;
+    }
+}
