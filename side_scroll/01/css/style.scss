@@ -12,6 +12,7 @@ body {
     font-family: 'Noto Serif JP', serif;
     overflow-x: hidden;
     background: #fff;
+    overscroll-behavior: none;
 }
 a {
     text-decoration: none;

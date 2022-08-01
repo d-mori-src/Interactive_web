@@ -8,6 +8,8 @@ body {
     font-family: "Noto Serif JP", serif;
     overflow-x: hidden;
     background: #fff;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
 }
 
 a {
