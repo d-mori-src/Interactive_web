@@ -8,7 +8,7 @@
 }
 
 .bg2 {
-    background: #ccc;
+    background: #24242e;
 }
 
 .spTabArea {
@@ -33,6 +33,89 @@
     }
     .sideArea .sideWrap {
         display: flex;
-        padding: 0 0 0 72px;
+        padding: 0 0 0 70px;
+    }
+    .sideArea .sideWrap .sideItem {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sideArea .sideWrap .sideItem .leftWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 52%;
+        height: 100vh;
+        padding: 80px 0 136px 88px;
+    }
+    .sideArea .sideWrap .sideItem .leftWrap h2 {
+        font-size: 14px;
+        mix-blend-mode: difference;
+        color: #fff;
+    }
+    .sideArea .sideWrap .sideItem .leftWrap .content h3 {
+        font-size: 20px;
+        line-height: 1.9;
+        mix-blend-mode: difference;
+        color: #fff;
+        margin: 0 0 40px 0;
+    }
+    .sideArea .sideWrap .sideItem .leftWrap .content h3 span {
+        display: block;
+        font-size: 12px;
+        line-height: 2;
+        color: #9D9D9D;
+        margin: 10px 0 0 0;
+    }
+    .sideArea .sideWrap .sideItem .leftWrap .content p {
+        font-size: 13px;
+        line-height: 1.8;
+        color: #535353;
+        margin: 0 0 40px 0;
+    }
+    .sideArea .sideWrap .sideItem .leftWrap .content .white {
+        color: #ccc;
+    }
+    .sideArea .sideWrap .sideItem .leftWrap .nonble {
+        font-size: 12px;
+        color: #9D9D9D;
+    }
+    .sideArea .sideWrap .sideItem .rightWrap {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        padding: 0 88px 0 0;
+    }
+    .sideArea .sideWrap .sideItem .rightWrap .twoImageRow {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        position: relative;
+    }
+    .sideArea .sideWrap .sideItem .rightWrap .twoImageRow img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 16px 0;
+    }
+    .sideArea .sideWrap .sideItem .rightWrap .twoImageRow1 {
+        bottom: 200px;
+    }
+    .sideArea .sideWrap .sideItem .rightWrap .twoImageRow2 {
+        bottom: 100px;
+    }
+    .sideArea .sideWrap .sideItem .OneImage {
+        padding: 0;
+    }
+    .sideArea .sideWrap .sideItem .OneImage img {
+        width: 100%;
+        height: auto;
+    }
+    .sideArea .copyright {
+        font-size: 10px;
+        position: fixed;
+        z-index: 1000;
+        bottom: 40px;
+        right: 56px;
+        mix-blend-mode: difference;
+        color: #fff;
     }
 }

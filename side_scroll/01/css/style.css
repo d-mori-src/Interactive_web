@@ -1,11 +1,23 @@
 * {
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+::-moz-selection {
+    background: #333;
+    color: #fff;
+}
+
+::selection {
+    background: #333;
+    color: #fff;
+}
+
 body {
-    font-family: "Noto Serif JP", serif;
     overflow-x: hidden;
     background: #fff;
     -ms-scroll-chaining: none;
