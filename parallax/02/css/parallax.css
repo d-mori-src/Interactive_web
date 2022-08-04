@@ -1,0 +1,52 @@
+.parallaxWrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto 120px;
+}
+.parallaxWrap .parallaxBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.parallaxWrap .bg1 {
+    background-image: url(../img/bg1.png);
+    z-index: 1;
+}
+.parallaxWrap .bg2 {
+    background-image: url(../img/bg2.png);
+    z-index: 2;
+}
+.parallaxWrap .bg3 {
+    background-image: url(../img/bg3.png);
+    z-index: 3;
+}
+.parallaxWrap .bg4 {
+    background-image: url(../img/bg4.png);
+    z-index: 4;
+}
+.parallaxWrap .bg5 {
+    background-image: url(../img/bg5.png);
+    z-index: 5;
+}
+.parallaxWrap .bg6 {
+    background-image: url(../img/bg6.png);
+    z-index: 6;
+}
+.parallaxWrap .bg7 {
+    background-image: url(../img/bg7.png);
+    z-index: 7;
+}
+.parallaxWrap .bg8 {
+    background-image: url(../img/bg8.png);
+    z-index: 8;
+}
+.parallaxWrap .bg9 {
+    background-image: url(../img/bg9.png);
+    z-index: 9;
+}

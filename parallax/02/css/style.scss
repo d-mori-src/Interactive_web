@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+//font-family: 'Noto Sans JP', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+    color: #fff;
+    background: #210002;
+    overscroll-behavior: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+// 便宜上
+.content {
+    width: 1200px;
+    margin: 0 auto 120px;
+    h2 {
+        font-size: 80px;
+        margin: 0 0 80px 0;
+    }
+    p {
+        font-size: 20px;
+        line-height: 2;
+    }
+} // 便宜上
