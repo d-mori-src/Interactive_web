@@ -1,0 +1,64 @@
+.icoSvg {
+    width: 100px;
+    height: auto;
+    fill: #333;
+    transition: all ease-in-out 0.5s;
+}
+.icoSvg path {
+    transition: all ease-in-out 0.3s;
+}
+.icoSvg .svg {
+    -webkit-animation: svg 0.2s ease-in-out infinite;
+            animation: svg 0.2s ease-in-out infinite;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+}
+.icoSvg #s {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+}
+.icoSvg #v {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+.icoSvg #g {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+.icoSvg:hover {
+    transform: scale(1.05, 1.05) rotate(2deg);
+}
+.icoSvg:hover #frame {
+    fill: #5ccbcd;
+}
+.icoSvg:hover #s {
+    fill: #cdcd5c;
+}
+.icoSvg:hover #v {
+    fill: #85cd5c;
+}
+.icoSvg:hover #g {
+    fill: #5ccd8d;
+}
+@-webkit-keyframes svg {
+    5% {
+        transform: translateY(-10%);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes svg {
+    5% {
+        transform: translateY(-10%);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,29 @@
+.icoSvg {
+    width: 100px;
+    height: auto;
+    fill: #333;
+    transition: all ease-in-out 0.5s;
+    path {
+        transition: all ease-in-out 0.3s;
+    }
+    .svg {
+        animation: svg 0.2s ease-in-out infinite;
+        animation-duration: 3s;
+    }
+    #s { animation-delay: 0.1s; }
+    #v { animation-delay: 0.2s; }
+    #g { animation-delay: 0.3s; }
+    &:hover {
+        #frame { fill: #5ccbcd; }
+        #s { fill: #cdcd5c; }
+        #v { fill: #85cd5c; }
+        #g { fill: #5ccd8d; }
+        transform: scale(1.05,1.05) rotate(2deg);
+    }
+
+    @keyframes svg {
+        5% {transform: translateY(-10%);}
+        10% {transform: translateY(0);}
+        100% {transform: translateY(0);}
+    }
+}

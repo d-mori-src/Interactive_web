@@ -1,0 +1,1 @@
+deSVG('.icoSvg', true);
