@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>CSSアニメーション</title>
+    <meta name="description" content="This is description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="theme-color" content="#fafafa">
+    <link rel="apple-touch-icon" href="./meta/icon.png">
+    <link rel="shortcut icon" href="./meta/favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- スクロールアニメーションスタイル -->
+    <link rel="stylesheet" href="./css/scroll.css">
+</head>
+  <body>
+    <div class="container">
+      <main class="page">
+        <!-- scrollTriggerクラスつける -->
+        <!-- 各エフェクトのクラスをつける -->
+        <h3>フェードイン</h3>
+        <div class="box scrollTrigger fadeIn"></div>
+
+        <h3>スライドイン</h3>
+        <div class="box scrollTrigger slideIn"></div>
+
+        <h3>ズームイン</h3>
+        <div class="box scrollTrigger zoomIn"></div>
+
+        <h3>ぽよよんと跳ねる</h3>
+        <div class="box scrollTrigger poyoyon"></div>
+
+        <h3>ぽよよんと跳ねる2</h3>
+        <div class="box scrollTrigger poyoyon2"></div>
+
+        <h3>ぽよよんと跳ねる3</h3>
+        <div class="box scrollTrigger poyoyon3"></div>
+
+        <h3>ななめから出てくる</h3>
+        <div class="box scrollTrigger slideSkew"></div>
+
+        <h3>ポップアップ</h3>
+        <div class="box scrollTrigger popup"></div>
+
+        <h3>ぽよぽよ収縮する</h3>
+        <div class="box scrollTrigger poyopoyo"></div>
+
+        <h3>きらんと光る</h3>
+        <div class="box scrollTrigger kiran"></div>
+
+        <h3>背景色が流れてくる</h3>
+        <div class="scrollTrigger bg">
+          <span class="bgWrap"><span class="inn">背景色が流れてくる</span></span><br>
+          <span class="bgWrap"><span class="inn">アニメーション</span></span>
+        </div>
+
+        <h3>文字がぬるりと現れる</h3>
+        <div class="scrollTrigger matrix">
+          <div class="bgWrap"><div class="inn">文字がぬるりと現れる</div></div>
+        </div>
+
+        <h3>背景色が消えてから表示される</h3>
+        <div class="scrollTrigger maskBg">背景色が消えてから表示される</div>
+
+        <h3>線が伸びる</h3>
+        <div class="scrollTrigger line"></div>
+
+        <h3>ボーダーが緩やかにつく</h3>
+        <div class="scrollTrigger stroke">
+          <div class="border top"></div>
+          <div class="border right"></div>
+          <div class="border bottom"></div>
+          <div class="border left"></div>
+        </div>
+
+        <h3>文字が滑らかに表示される</h3>
+        <div class="scrollTrigger smoothText">文字が滑らかに表示される</div>
+
+        <h3>ふわふわ揺れる</h3>
+        <div class="fuwafuwa"></div>
+
+        <h3>くるくる回りながら出現</h3>
+        <div class="scrollTrigger kurukuru"></div>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <!-- スクロールアニメーションスクリプト -->
+    <script src="./js/scroll.js"></script>
+  </body>
+</html>
