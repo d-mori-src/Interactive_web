@@ -1,0 +1,44 @@
+.btnE {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    padding: 10px 20px;
+    background:#eee;
+    text-decoration: none;
+    outline: none;
+    transition: all .3s;
+    transition-delay: .7s;
+    &:hover {
+        background:#333;
+        color: #fff;
+        &::before,
+        &::after {
+            width: 100%;
+        }
+        span::before,
+        span::after {
+            height: 100%;
+        }
+    }
+    span {
+        display: block;
+        &::before,
+        &::after{
+            content:"";
+            position: absolute;
+            width:1px;
+            height:0;
+            background: #333;
+            transition: all 0.2s linear;
+        }
+    }
+    &::before,
+    &::after {
+        content:"";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background: #333;
+        transition: all 0.2s linear;
+    }
+}

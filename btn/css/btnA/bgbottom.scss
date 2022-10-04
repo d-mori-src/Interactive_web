@@ -1,0 +1,15 @@
+.bgbottom:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background:  #333;
+    width: 100%;
+    height: 0;
+    transition:.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+}
+.bgbottom:hover:before{
+    height: 100%;	
+    background-color: #333;
+}

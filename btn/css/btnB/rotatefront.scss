@@ -1,0 +1,18 @@
+.rotatefront span:nth-child(1) {
+    background: #fff;
+    color: #000;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -25px;
+}
+.rotatefront:hover span:nth-child(1) {
+    transform: rotateX(-90deg);
+}
+.rotatefront span:nth-child(2) {
+    background: #000;
+    color: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -25px;
+}
+.rotatefront:hover span:nth-child(2) {
+    transform: rotateX(0deg);
+}

@@ -1,0 +1,18 @@
+.gradientB {
+    display: inline-block;
+    padding: 18px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 1px solid #fa6c9f;
+    color: #fa6c9f;
+    outline: none;
+    transition: all 0.4s ease-out;
+}
+.gradientB:hover {
+    border-color: transparent;
+    color: #fff;
+    background: linear-gradient(270deg, #fa6c9f 0%, #ff9640 50%, #ff357f 100%);
+    background-size: 200% auto;
+    background-position: right center;
+    box-shadow: 0 5px 10px rgba(250, 108, 159, 0.4);
+}

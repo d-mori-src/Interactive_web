@@ -1,0 +1,27 @@
+.bgskew::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -130%;
+    background: #333;
+    width: 120%;
+    height: 100%;
+    transform: skewX(-25deg);
+}
+
+.bgskew:hover::before {
+    -webkit-animation: skewanime 0.5s forwards;
+            animation: skewanime 0.5s forwards;
+}
+
+@-webkit-keyframes skewanime {
+    100% {
+        left: -10%;
+    }
+}
+
+@keyframes skewanime {
+    100% {
+        left: -10%;
+    }
+}

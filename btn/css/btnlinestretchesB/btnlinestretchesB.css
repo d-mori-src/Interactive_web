@@ -1,0 +1,31 @@
+.btnlinestretchesB {
+    position: relative;
+    color: #333;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+.btnlinestretchesB::before, .btnlinestretchesB::after {
+    content: "";
+    position: absolute;
+    border: solid #333;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.btnlinestretchesB::before {
+    top: 0;
+    left: 0;
+    border-width: 1px 0 0 1px;
+}
+.btnlinestretchesB::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 1px 1px 0;
+}
+.btnlinestretchesB:hover::before, .btnlinestretchesB:hover::after {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-color: #666;
+}

@@ -1,0 +1,23 @@
+.bordercircle2 {
+    &::after{
+        left: 0;
+        bottom: 0;
+    }
+    &::before{
+        right: 0;
+        top: 0;
+        transition-delay: 0.4s;
+    }
+    span {
+        &::after{
+            right: 0;
+            bottom: 0;
+            transition-delay: 0.2s;
+        }
+        &::before{
+            left: 0;
+            top: 0;
+            transition-delay: 0.6s;
+        }
+    }
+}

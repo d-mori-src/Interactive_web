@@ -1,0 +1,19 @@
+.btnB {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    outline: none;
+    span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #333;
+        transform-style: preserve-3d;
+        transition: 0.5s;
+    }
+}

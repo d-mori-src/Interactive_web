@@ -1,0 +1,61 @@
+.btnrippleA {
+    position: relative;
+    display: inline-block;
+    background: #333;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #ccc;
+    outline: none;
+    transition: all 0.3s;
+}
+.btnrippleA:hover {
+    background: #666;
+}
+.btnrippleA::after, .btnrippleA::before {
+    content: "";
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    border: 1px solid #333;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    opacity: 1;
+    -webkit-animation: 1s circleanime linear infinite;
+            animation: 1s circleanime linear infinite;
+}
+.btnrippleA::before {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+.btnrippleA span::after {
+    content: "";
+    position: absolute;
+    top: 38%;
+    left: 45%;
+    border: 14px solid transparent;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-color: #fff;
+}
+
+@-webkit-keyframes circleanime {
+    0% {
+        transform: scale(0.68);
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes circleanime {
+    0% {
+        transform: scale(0.68);
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}

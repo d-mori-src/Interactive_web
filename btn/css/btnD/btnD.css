@@ -1,0 +1,19 @@
+.btnD {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #333;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+}
+.btnD:hover {
+    color: #fff;
+    border-color: transparent;
+    transition-delay: 0.6s;
+}
+.btnD span {
+    display: block;
+    z-index: 2;
+}

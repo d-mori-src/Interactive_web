@@ -1,0 +1,102 @@
+.btnlinestretchesE {
+    position: relative;
+    color: #333;
+    padding: 10px 0;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+.btnlinestretchesE::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #333;
+    -webkit-animation: arrowlong01 2s ease infinite;
+            animation: arrowlong01 2s ease infinite;
+}
+.btnlinestretchesE::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    transform: rotate(45deg);
+    -webkit-animation: arrowlong02 2s ease infinite;
+            animation: arrowlong02 2s ease infinite;
+}
+@-webkit-keyframes arrowlong01 {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    20% {
+        width: 0;
+        opacity: 1;
+    }
+    80% {
+        width: 105%;
+        opacity: 1;
+    }
+    100% {
+        width: 105%;
+        opacity: 0;
+    }
+}
+@keyframes arrowlong01 {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    20% {
+        width: 0;
+        opacity: 1;
+    }
+    80% {
+        width: 105%;
+        opacity: 1;
+    }
+    100% {
+        width: 105%;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes arrowlong02 {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    20% {
+        left: 0;
+        opacity: 1;
+    }
+    80% {
+        left: 103%;
+        opacity: 1;
+    }
+    100% {
+        left: 103%;
+        opacity: 0;
+    }
+}
+@keyframes arrowlong02 {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    20% {
+        left: 0;
+        opacity: 1;
+    }
+    80% {
+        left: 103%;
+        opacity: 1;
+    }
+    100% {
+        left: 103%;
+        opacity: 0;
+    }
+}

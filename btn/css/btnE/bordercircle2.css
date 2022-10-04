@@ -1,0 +1,19 @@
+.bordercircle2::after {
+    left: 0;
+    bottom: 0;
+}
+.bordercircle2::before {
+    right: 0;
+    top: 0;
+    transition-delay: 0.4s;
+}
+.bordercircle2 span::after {
+    right: 0;
+    bottom: 0;
+    transition-delay: 0.2s;
+}
+.bordercircle2 span::before {
+    left: 0;
+    top: 0;
+    transition-delay: 0.6s;
+}

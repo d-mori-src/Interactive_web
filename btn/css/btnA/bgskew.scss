@@ -1,0 +1,18 @@
+.bgskew::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -130%;
+	background:#333;
+	width:120%;
+	height: 100%;
+	transform: skewX(-25deg);
+}
+.bgskew:hover::before {
+	animation: skewanime .5s forwards;
+}
+@keyframes skewanime {
+	100% {
+		left:-10%;
+	}
+}

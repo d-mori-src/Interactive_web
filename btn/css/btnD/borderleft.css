@@ -1,0 +1,36 @@
+.borderleft span::before,
+.borderleft span::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #333;
+    transition: all 0.3s;
+}
+.borderleft span::before {
+    left: 0;
+    top: 0;
+}
+.borderleft span::after {
+    left: 0;
+    bottom: 0;
+}
+.borderleft:hover span::before,
+.borderleft:hover span::after {
+    width: 100%;
+}
+.borderleft:hover::before {
+    width: 100%;
+    transition-delay: 0.4s;
+}
+.borderleft::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    background: #333;
+    transition: all 0.3s;
+}

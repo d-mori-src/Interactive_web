@@ -1,0 +1,31 @@
+.btnlinestretchesC {
+	position:relative;
+	color:#333;
+    padding: 10px 30px;
+	display:inline-block;
+    text-decoration: none;
+    outline: none;
+    span {
+        position:relative;
+        z-index: 2;
+    }
+    &:hover {
+        span {
+            color: #fff;
+        }
+        &::after {
+            height:100%;
+        }
+    }
+    &::after {
+        content:'';
+        position:absolute;
+        z-index:1;
+        bottom:0;
+        left:0;
+        background:#333;
+        width:100%;
+        height:1px;
+        transition:all 0.3s ease-in-out;
+    }
+}

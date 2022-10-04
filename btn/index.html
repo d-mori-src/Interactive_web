@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>ボタンアニメーション</title>
+    <meta name="description" content="This is description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="theme-color" content="#fafafa">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="./meta/icon.png">
+    <link rel="shortcut icon" href="./meta/favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slidein.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- btnA 共通 -->
+    <link rel="stylesheet" href="./css/btnA/btnA.css">
+    <!-- btnA 各種ボタン -->
+    <link rel="stylesheet" href="./css/btnA/bgleft.css">
+    <link rel="stylesheet" href="./css/btnA/bgright.css">
+    <link rel="stylesheet" href="./css/btnA/bgbottom.css">
+    <link rel="stylesheet" href="./css/btnA/bgcenterx.css">
+    <link rel="stylesheet" href="./css/btnA/bgcentery.css">
+    <link rel="stylesheet" href="./css/btnA/bgcenterout.css">
+    <link rel="stylesheet" href="./css/btnA/bgskew.css">
+
+    <!-- btnB 共通 -->
+    <link rel="stylesheet" href="./css/btnB/btnB.css">
+    <!-- btnB 各種ボタン -->
+    <link rel="stylesheet" href="./css/btnB/rotatefront.css">
+    <link rel="stylesheet" href="./css/btnB/rotateback.css">
+
+    <!-- btnC 共通 -->
+    <link rel="stylesheet" href="./css/btnC/btnC.css">
+    <!-- btnC 各種ボタン -->
+    <link rel="stylesheet" href="./css/btnC/pushdown.css">
+    <link rel="stylesheet" href="./css/btnC/pushright.css">
+    <link rel="stylesheet" href="./css/btnC/pushleft.css">
+
+    <!-- btnD 共通 -->
+    <link rel="stylesheet" href="./css/btnD/btnD.css">
+    <!-- btnD 各種ボタン -->
+    <link rel="stylesheet" href="./css/btnD/bordertop.css">
+    <link rel="stylesheet" href="./css/btnD/borderbottom.css">
+    <link rel="stylesheet" href="./css/btnD/borderleft.css">
+    <link rel="stylesheet" href="./css/btnD/borderright.css">
+    <link rel="stylesheet" href="./css/btnD/bordercenter.css">
+
+    <!-- btnE 共通 -->
+    <link rel="stylesheet" href="./css/btnE/btnE.css">
+    <!-- btnE 各種ボタン -->
+    <link rel="stylesheet" href="./css/btnE/bordercircle1.css">
+    <link rel="stylesheet" href="./css/btnE/bordercircle2.css">
+    <link rel="stylesheet" href="./css/btnE/bordercircle3.css">
+
+    <!-- btnrippleA -->
+    <link rel="stylesheet" href="./css/btnrippleA/btnrippleA.css">
+
+    <!-- btnrippleB -->
+    <link rel="stylesheet" href="./css/btnrippleB/btnrippleB.css">
+
+    <!-- pushcircle -->
+    <link rel="stylesheet" href="./css/pushcircle/pushcircle.css">
+
+    <!-- gradientA -->
+    <link rel="stylesheet" href="./css/gradientA/gradientA.css">
+
+    <!-- gradientB -->
+    <link rel="stylesheet" href="./css/gradientB/gradientB.css">
+
+    <!-- btnlinestretchesA -->
+    <link rel="stylesheet" href="./css/btnlinestretchesA/btnlinestretchesA.css">
+
+    <!-- btnlinestretchesB -->
+    <link rel="stylesheet" href="./css/btnlinestretchesB/btnlinestretchesB.css">
+
+    <!-- btnlinestretchesC -->
+    <link rel="stylesheet" href="./css/btnlinestretchesC/btnlinestretchesC.css">
+
+    <!-- btnlinestretchesD -->
+    <link rel="stylesheet" href="./css/btnlinestretchesD/btnlinestretchesD.css">
+
+    <!-- btnlinestretchesE -->
+    <link rel="stylesheet" href="./css/btnlinestretchesE/btnlinestretchesE.css">
+
+    <!-- btnchangeline -->
+    <link rel="stylesheet" href="./css/btnchangeline/btnchangeline.css">
+
+    <!-- btnshine -->
+    <link rel="stylesheet" href="./css/btnshine/btnshine.css">
+</head>
+<body>
+    <div class="container">
+        <main class="page">
+            <h3>btnA</h3>
+            <a href="" class="btnA bgleft"><span>左から右</span></a>
+            <a href="" class="btnA bgright"><span>右から左</span></a>
+            <a href="" class="btnA bgbottom"><span>下から上</span></a>
+            <a href="" class="btnA bgcenterx"><span>中央から横全体</span></a>
+            <a href="" class="btnA bgcentery"><span>中央から縦全体</span></a>
+            <a href="" class="btnA bgcenterout"><span>中央から外</span></a>
+            <a href="" class="btnA bgskew"><span>斜めに背景が流れる</span></a>
+
+            <h3>btnB</h3>
+            <a href="" class="btnB rotatefront"><span>くるっと回転（手前に）</span><span>回転後（手前に）</span></a>
+            <a href="" class="btnB rotateback"><span>くるっと回転（奥に）</span><span>回転後（奥に）</span></a>
+
+            <h3>btnC</h3>
+            <a href="" class="btnC pushdown"><span>下に押し込まれる</span></a>
+            <a href="" class="btnC pushright"><span>右下に押し込まれる</span></a>
+            <a href="#" class="btnC pushleft"><span>左下に押し込まれる</span></a>
+
+            <h3>btnD</h3>
+            <a href="" class="btnD bordertop"><span>線から塗に変化（上から下へ）</span></a>
+            <a href="" class="btnD borderbottom"><span>線から塗に変化（下から上へ）</span></a>
+            <a href="" class="btnD borderleft"><span>線から塗に変化（左から右へ）</span></a>
+            <a href="" class="btnD borderright"><span>線から塗に変化（右から左へ）</span></a>
+            <a href="" class="btnD bordercenter"><span>線から塗に変化（中央から外）</span></a>
+
+            <h3>btnE</h3>
+            <a href="" class="btnE bordercircle1"><span>左上と右下から枠線が伸びて塗に</span></a>
+            <a href="#" class="btnE bordercircle2"><span>左下⇒右下⇒右上⇒左上⇒左下に枠線が伸びて塗りに</span></a>
+            <a href="#" class="btnE bordercircle3"><span>左上と右下から枠線が伸びて塗りに</span></a>
+
+            <h3>btnrippleA</h3>
+            <a href="" class="btnrippleA"><span></span></a>
+
+            <h3>btnrippleB</h3>
+            <a href="" class="btnrippleB">波紋がふわっと広がる</a>
+
+            <h3>pushcircle</h3>
+            <a href="" class="pushcircle">pushcircle</a>
+
+            <h3>gradientA</h3>
+            <a href="" class="gradientA">グラデーションが流れる</a>
+            <a href="" class="gradientB">グラデーション線から塗に変化する</a>
+
+            <h3>btnlinestretchesA</h3>
+            <a href="" class="btnlinestretchesA">外の線が伸びる</a>
+
+            <h3>btnlinestretchesB</h3>
+            <a href="" class="btnlinestretchesB">少し出ていた線が伸びる</a>
+
+            <h3>btnlinestretchesC</h3>
+            <a href="" class="btnlinestretchesC"><span>下線が伸びて背景に変わる</span></a>
+
+            <h3>btnlinestretchesD</h3>
+            <a href="" class="btnlinestretchesD"><span>線の上を別の線が伸びる</span></a>
+
+            <h3>btnlinestretchesE</h3>
+            <a href="" class="btnlinestretchesE"><span>矢印の線がループして伸縮</span></a>
+
+            <h3>btnchangeline</h3>
+            <a href="" class="btnchangeline"><span>塗りから線に変わる</span></a>
+
+            <h3>btnshine</h3>
+            <a href="" class="btnshine">きらっと光る</a>
+        </main>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
