@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 仮リセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            letter-spacing: 1.5px;
+            color: #474645;
+            transition: .5s;
+        }
+        img {
+            vertical-align: bottom;
+        }
+        ul li {
+            list-style: none;
+            letter-spacing: 1.5px;
+        }
+        .sp { display: block; }
+        .pc { display: none; }
+        @media screen and (min-width:768px) {
+            .sp { display: none; }
+            .pc { display: block; }
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/drawer.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="leftHedder">
+                <a href="" class="logo">
+                    <img src="" alt="logo" loading="lazy">
+                </a>
+                <ul class="pc navi">
+                    <li><a href="" class="">ホーム</a></li>
+                    <li><a href="" class="">アバウト</a></li>
+                </ul>
+            </div>
+            <div class="rightHedder">               
+                <a href="" class="pc">
+                    <img src="" class="" alt="" loading="lazy">
+                </a>
+            </div>
+
+            <!-- モバイルのみドロワーメニュー -->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul>
+                    <li><a href="">ホーム</a></li>         
+                    <li><a href="">アバウト</a></li>
+                </ul>
+            </div><!-- モバイルのみドロワーメニュー -->
+        </div>
+    </header>
+</body>
+</html>

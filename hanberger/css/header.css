@@ -1,0 +1,278 @@
+@charset "UTF-8";
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 64px);
+    height: 58px;
+    padding: 0;
+    background: #fff;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+.header .leftHedder {
+    padding: 8px 20px;
+}
+.header .leftHedder .logo img {
+    height: 40px;
+}
+.header .rightHedder {
+    display: flex;
+}
+.header .rightHedder .phone {
+    height: 58px;
+}
+.header .rightHedder .phone .phoneIcon {
+    height: 100%;
+}
+.header .rightHedder .favorite {
+    height: 58px;
+    position: relative;
+}
+.header .rightHedder .favorite .favoriteIcon {
+    height: 100%;
+}
+.header .rightHedder .favorite .countIcon {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 2px 0;
+    border-radius: 12px;
+    background: #D1001B;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.header .rightHedder .favorite .countIcon.circle {
+    width: 14px;
+    height: 14px;
+}
+.header .rightHedder .favorite .countIcon.rectangle {
+    width: auto;
+    height: 16px;
+    padding: 2px 6px;
+    right: 8px;
+}
+@media screen and (min-width: 768px) {
+    .header {
+        width: 100%;
+    }
+    .header .leftHedder {
+        display: flex;
+    }
+    .header .leftHedder .logo {
+        margin: 0 40px 0 0;
+    }
+    .header .leftHedder .navi {
+        display: flex;
+        position: relative;
+        top: 2px;
+    }
+    .header .leftHedder .navi li {
+        margin: 0 20px 0 0;
+    }
+    .header .leftHedder .navi li a {
+        font-size: 12px;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+    .header .leftHedder .navi li a:hover {
+        color: #D1001B;
+        padding: 0 0 8px;
+        border-bottom: 1px solid #D1001B;
+    }
+    .header .leftHedder .navi li .active {
+        color: #D1001B;
+        padding: 0 0 8px;
+        border-bottom: 1px solid #D1001B;
+    }
+    .header .leftHedder .navi li .megaMore {
+        display: inline;
+        font-size: 12px;
+        font-weight: 500;
+        color: #333;
+        background: none;
+        border: none;
+        outline: 0;
+        transition: 0.5s;
+        position: relative;
+    }
+    .header .leftHedder .navi li .megaMore:hover {
+        color: #D1001B;
+        padding: 0 0 8px;
+        border-bottom: 1px solid #D1001B;
+    }
+    .header .leftHedder .navi li .megaMore::before {
+        content: "サービス一覧";
+    }
+    .header .leftHedder .navi li .megaMore::after {
+        content: "";
+        display: inline-block;
+        background-image: url(../img/common/down_allow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+        margin: 0 0 0 12px;
+        position: relative;
+        top: 4px;
+    }
+    .header .leftHedder .navi li .megaMore.on-click::before {
+        content: "サービス一覧";
+    }
+    .header .leftHedder .navi li .megaMore.on-click::after {
+        content: "";
+        display: inline-block;
+        background-image: url(../img/common/up_arrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+        margin: 0 0 0 12px;
+        position: relative;
+        top: 4px;
+    }
+    .header .rightHedder {
+        display: flex;
+        align-items: center;
+    }
+    .header .rightHedder .phoneIcon {
+        height: 30px;
+        margin: 0 20px 0 0;
+    }
+    .header .rightHedder .contact {
+        height: 58px;
+    }
+    .header .rightHedder .contact .contactIcon {
+        height: 100%;
+    }
+    .header .rightHedder .favorite .countIcon {
+        top: 8px;
+        right: 24px;
+    }
+    .header .rightHedder .favorite .countIcon.rectangle {
+        right: 12px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 864px) {
+    .header .leftHedder .navi {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header {
+        height: 80px;
+    }
+    .header .leftHedder {
+        padding: 24px 40px;
+    }
+    .header .leftHedder .logo {
+        position: relative;
+        top: -4px;
+    }
+    .header .leftHedder .logo img {
+        height: 40px;
+    }
+    .header .rightHedder .phoneIcon {
+        height: 40px;
+        margin: 0 40px 0 0;
+    }
+    .header .rightHedder .contact {
+        height: 80px;
+    }
+    .header .rightHedder .favorite {
+        height: 80px;
+    }
+    .header .rightHedder .favorite .countIcon {
+        top: 18px;
+        right: 36px;
+    }
+    .header .rightHedder .favorite .countIcon.rectangle {
+        right: 26px;
+    }
+}
+@media screen and (min-width: 1150px) {
+    .header .leftHedder .navi li {
+        margin: 0 32px 0 0;
+    }
+    .header .leftHedder .navi li a,
+    .header .leftHedder .navi li .megaMore {
+        font-size: 14px;
+    }
+}
+
+.megaHide {
+    display: none;
+}
+.megaHide .megamenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 80px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    position: fixed;
+    top: 58px;
+    left: 0;
+    z-index: 10;
+}
+.megaHide .megamenu h2 {
+    font-size: 16px;
+}
+.megaHide .megamenu h2 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    color: #D1001B;
+    margin: 10px 0 0 0;
+}
+.megaHide .megamenu .megaService {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.megaHide .megamenu .megaService ul li {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+}
+.megaHide .megamenu .megaService ul li span {
+    color: #D1001B;
+    margin: 0 6px 0 0;
+}
+.megaHide .megamenu .megaService ul li a {
+    letter-spacing: 0;
+}
+@media screen and (min-width: 1024px) {
+    .megaHide .megamenu {
+        border-bottom: 1px solid #eee;
+        background: #fff;
+        position: fixed;
+        top: 80px;
+    }
+    .megaHide .megamenu h2 {
+        font-size: 20px;
+    }
+    .megaHide .megamenu h2 span {
+        font-size: 13px;
+        margin: 12px 0 0 0;
+    }
+    .megaHide .megamenu .megaService ul li {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 0 24px 0;
+    }
+    .megaHide .megamenu .megaService ul li span {
+        margin: 0 10px 0 0;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .megaHide .megamenu {
+        padding: 60px 160px;
+    }
+}
